@@ -1,13 +1,18 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body{
-    background-color: #4040ce;
+    background-color: #1f2937;
+    padding-left: 48px;
+    padding-right: 48px;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
-    padding-left: 48px;
-    padding-right: 48px;
     color: white;
+    margin-bottom: 64px;
 }
 
 .logo{
@@ -23,4 +28,46 @@ a{
 .header-links{
     display: flex;
     gap: 16px;
+}
+
+.top-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: white;
+    width: 300px;
+}
+
+.welcome-text p{
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.welcome-subtext{
+    font-weight: 200;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.welcome-text button{
+    background-color: rgb(58, 58, 233);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 130px;
+    height: auto;
+    font-size: 16px;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+img{
+    border-radius: 20px;
 }
