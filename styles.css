@@ -1,5 +1,5 @@
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'roboto', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
@@ -33,6 +33,7 @@ a{
 .top-content{
     display: flex;
     justify-content: space-between;
+    padding:0px 64px
 }
 
 .welcome-text{
@@ -46,16 +47,18 @@ a{
 .welcome-text p{
     font-size: 32px;
     font-weight: 800;
+    margin-bottom: 12px;
 }
 
 .welcome-subtext{
     font-weight: 200;
     font-size: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+    color:lightgray;
 }
 
 .welcome-text button{
-    background-color: rgb(58, 58, 233);
+    background-color: #3882F6;
     color: white;
     text-decoration: none;
     border-radius: 10px;
@@ -70,4 +73,72 @@ a{
 
 img{
     border-radius: 20px;
+    margin-bottom: 32px;
+    width: auto;
+    height: 250px;
+}
+
+.middle-content{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 0 100vmax white;
+    clip-path: inset(0 -100vmax);
+    align-items: center;
+}
+
+.middle-content p{
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.products{
+    display: flex;
+    margin-bottom: 64px;
+    gap:64px
+}
+
+.product-illustration{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color:darkgray;
+    text-align: center;
+    gap:64px;
+    flex-wrap: wrap;
+}
+
+.product-illustration div{
+    border: 3px solid #3882F6;
+    border-radius: 16px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 16px;
+}
+
+.qoute{
+    background-color: #E5E7EB;
+    box-shadow: 0 0 0 100vmax #E5E7EB;
+    clip-path: inset(0 -100vmax);
+    display: flex;
+    flex-direction: column;
+    padding: 64px;
+    width: 40vmax;
+}
+
+#qoute{
+    font-size: 36px;
+    font-style: light italic;
+    margin-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    color:#1f2937;
+}
+
+#qoute-author{
+    display: flex;
+    justify-content: right;
+    font-size: 18px;
+    font-weight: bold;
 }
